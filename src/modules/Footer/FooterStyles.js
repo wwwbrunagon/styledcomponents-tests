@@ -6,6 +6,7 @@ export const FooterStyle = styled.div`
     border-top: 2px solid #FF4E50;
     padding-top:20px;
     max-width: 100%;
+    bottom: 0;    
 
     .footer{
       @media (min-width: 550px){
@@ -78,10 +79,13 @@ export const FooterStyle = styled.div`
       }      
  
      .footer_link{
-      cursor:pointer;
       text-decoration:none;
       color: #999999;
       font-weight: 100;
+      cursor:pointer;
+      &:hover{
+        color:#FF4E50;
+      }
       
         @media (max-width: 549px){      
           padding: 3px 0px 0px 8px;

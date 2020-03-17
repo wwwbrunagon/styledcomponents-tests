@@ -1,28 +1,90 @@
 import styled from "styled-components";
-import px2vw from "../../utils/px2vw";
-
 
 export const SearchPartnersStyle = styled.div `
-    margin-top: 50px;
-    margin-bottom: 50px;
+  
+    
     justify-content: center;
     text-align: center;
 
-    .buttonStyle{
-        background-color:red;
+    @media (max-width: 549px){                      
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+        .description{
+            
+            h2{
+                text-align: center;                
+                font-size:16px;                
+            } 
+            p{
+                color: #666666;
+                font-size:10px;
+                margin-top:10px;
+                margin-bottom:10px;
+            }       
+        }       
+
+
+        .formMobile{
+            font-size:8px;
+            padding: 7px 5px 7px;
+            border: 1px solid #CCCCCC;
+            border-radius:2px;            
+            width: 185px;
+            font-family: 'Montserrat', sans-serif; 
+                
+            ::-webkit-input-placeholder { 
+                color: #CCCCCC;   
+            }
+        }   
+
     }
 
+
+    @media (min-width: 550px){       
+        margin-bottom: 100px;
+        
+        h2{
+            font-size:22px;
+            margin:35px;
+            span{
+                display:none;
+            }
+        }
+        P{
+            color: #666666;
+            font-size:16px;
+        }
+        .formMobile{
+            display:none;
+        }
+    }
+
+    
 `;
 
-export const Container = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: ${px2vw(32)};
-  max-width: 100%;
-  @media (min-width: 1024px) {
-    flex-wrap: nowrap;
-  }
+
+export const InputStyle = styled.form `
+
+    form input{   
+        font-family: 'Montserrat', sans-serif; 
+        display:block;
+        ::-webkit-input-placeholder { 
+            color: #CCCCCC;   
+        }
+
+        @media (max-width: 549px){
+            display:none;  
+        }     
+
+        @media (min-width: 550px){
+                font-size:13px;
+                padding: 5px 5px 10px 10px;
+                border: 1px solid #CCCCCC; 
+                border-radius: 2px;           
+                width: 270px;  
+                margin-right:10px;  
+            }     
+        }   
+
 `;
-
-
