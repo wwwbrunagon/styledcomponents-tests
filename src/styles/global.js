@@ -6,6 +6,7 @@ export const Global = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
   }
   :root {
       font-size: ${px2vw(24)};
@@ -18,6 +19,7 @@ export const Global = createGlobalStyle`
         font-size: ${px2vw(16)};
       }
     }
+    
 `;
 
 export default Global;

@@ -1,13 +1,11 @@
 import React from "react";
-import { FooterLayout} from "./FooterStyles";
+import { FooterStyle } from "./FooterStyles";
 import LogoSrc from "../images/aretologo.png"
-
-
 
 
 export default function Footer() {
   return (
-      <FooterLayout>
+      <FooterStyle>
             <div className="footer">
                 <div className="footer_logo">
                     <p>DREAMSHARE</p>
@@ -31,6 +29,6 @@ export default function Footer() {
                     <img className="footer_brand" src={LogoSrc} alt = "logo designed by areto"></img>  
                 </div>
             </div>
-        </FooterLayout>
+        </FooterStyle>
   );
 }

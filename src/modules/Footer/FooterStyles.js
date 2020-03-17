@@ -1,26 +1,8 @@
 import styled from "styled-components";
 
-
-export const Container = styled.div`
-  display: flex;  
-  justify-content: center;
-  margin: 0;
-  max-width: 100%;
-
-  @media (min-width: 1024px) {
-    flex-wrap: nowrap;
-    font-weight: bold;
-    text-align: left;
-  }
-`;
-
-
-export const FooterLayout = styled.div`   
-    
-    font-family: 'Montserrat', sans-serif;
+export const FooterStyle = styled.div` 
     justify-content: center;
-    text-align: center;    
-   
+    text-align: center;
     border-top: 2px solid #FF4E50;
     padding-top:20px;
     max-width: 100%;
@@ -32,7 +14,6 @@ export const FooterLayout = styled.div`
       }
 
     }
-
 
     .footer_logo{
       color: #FF4E50;
@@ -48,7 +29,6 @@ export const FooterLayout = styled.div`
         margin-right: 50px;
       }
     }
-
   
     .footer_map{        
       margin-top: 10px;
@@ -91,25 +71,25 @@ export const FooterLayout = styled.div`
     }
 
     .footer_map_flex{
-      @media (max-width: 549px){
-        display: flex; 
-        justify-content: center; 
-      }
-      }
-      
+        @media (max-width: 549px){
+          display: flex; 
+          justify-content: center; 
+        }
+      }      
  
      .footer_link{
+      cursor:pointer;
       text-decoration:none;
       color: #999999;
       font-weight: 100;
       
-      @media (max-width: 549px){      
-      padding: 3px 0px 0px 8px;
-      font-size:11px;
+        @media (max-width: 549px){      
+          padding: 3px 0px 0px 8px;
+          font-size:11px;
       }
-      @media (min-width: 550px){
-        padding: 0px 80px 0px 10px;
-        font-size:12px;        
+        @media (min-width: 550px){
+          padding: 0px 80px 0px 10px;
+          font-size:12px;        
       }
     }
 
@@ -118,14 +98,5 @@ export const FooterLayout = styled.div`
         width: 120px;
         margin-top: 10px;
       }
-    }
-
-  
+    }  
 `;
-
-export const Brand = styled.img` 
-      width: ${props => `${props.width}px`};
-      height: ${props => `${props.height}px`};
-      margin: ${props => `${props.margin}px`};      
-`;
-
