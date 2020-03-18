@@ -1,20 +1,19 @@
 import styled from "styled-components";
 
-export const SearchPartnersStyle = styled.div `
-  
+export const SearchPartnersStyle = styled.div `  
     
     justify-content: center;
     text-align: center;
 
     @media (max-width: 549px){                      
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 25px;
-
-        .description{
-            
+                                
+        .description{            
+           
             h2{
                 text-align: center;                
-                font-size:16px;                
+                font-size:16px;
             } 
             p{
                 color: #666666;
@@ -23,7 +22,6 @@ export const SearchPartnersStyle = styled.div `
                 margin-bottom:10px;
             }       
         }       
-
 
         .formMobile{
             font-size:8px;
@@ -58,9 +56,13 @@ export const SearchPartnersStyle = styled.div `
         .formMobile{
             display:none;
         }
-    }
+    } 
+ 
+    @media (min-width: 800px){
+        margin-top:80px;
 
-    
+    }  
+   
 `;
 
 
@@ -85,6 +87,5 @@ export const InputStyle = styled.form `
                 width: 270px;  
                 margin-right:10px;  
             }     
-        }   
-
+        }    
 `;

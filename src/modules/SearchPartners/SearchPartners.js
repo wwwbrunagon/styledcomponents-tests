@@ -1,8 +1,6 @@
 import React from "react";
 import { SearchPartnersStyle, InputStyle} from './SearchPartnersStyles'
-import { Button } from '../../Components/Button'
-
- 
+import { Button } from '../../Components/Button' 
 import { Container } from '../../Components/Container'
 import {ThemeProvider} from 'styled-components'
 
@@ -15,10 +13,8 @@ const theme = {
 export default function (){
     return(  
    
-    < SearchPartnersStyle>
-    
+    < SearchPartnersStyle>    
         <div className="description">
-
             <h2>Crate your holiday </h2>
             <h2><span>activity</span></h2>
             <p>Hi! What are your holiday interests?</p>                            
@@ -52,8 +48,7 @@ export default function (){
                 > Search partners
                 </Button>                           
             </ThemeProvider>
-        </Container>   
-       
+        </Container>          
     </SearchPartnersStyle>  
     )
 }
