@@ -1,19 +1,31 @@
 import styled from "styled-components";
 
 export const SearchPartnersStyle = styled.div `  
-    
+    margin-top: 10px;    
     justify-content: center;
     text-align: center;
+    
+    a{
+        text-decoration:none;
+        
+    }
+    a:hover{
+            color:#F7F3F2;
+        }
 
-    @media (max-width: 549px){                      
-        margin-top: 40px;
+
+    @media (max-width: 549px){
         margin-bottom: 25px;
                                 
-        .description{            
+        .description{   
+            margin-top: 50px;        
            
             h2{
+                font-weight: 900;
                 text-align: center;                
-                font-size:16px;
+                font-size:16px;               
+                width:200px;                
+               
             } 
             p{
                 color: #666666;
@@ -43,6 +55,7 @@ export const SearchPartnersStyle = styled.div `
         margin-bottom: 100px;
         
         h2{
+            font-weight: bold;
             font-size:22px;
             margin:35px;
             span{

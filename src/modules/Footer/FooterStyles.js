@@ -6,6 +6,8 @@ export const FooterStyle = styled.div`
     border-top: 2px solid #FF4E50;
     padding-top:20px;
     max-width: 100%;
+    height:250px;
+    margin-top:40px;
     bottom: 0;    
 
     .footer{

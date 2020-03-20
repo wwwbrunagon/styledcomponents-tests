@@ -1,18 +1,24 @@
 import styled from "styled-components";
 
 export const Button = styled.div` 
-    cursor: pointer;    
-    justify-content: center;
+    cursor: pointer;      
     text-decoration: none;
-    text-align: center;
-    
+    justify-content: center;
+   
     color: ${props => props.theme.color};    
     background: ${props => props.theme.bg};
-    border-color: ${props => props.theme.bc};
+    border-color: ${props => props.theme.bc}; 
     border-style: ${props => props.theme.bs};
+    text-align: ${props => props.theme.ta};
+   
+    &:hover{
+      border-color: ${props => props.theme.bchover};
+      background: ${props => props.theme.bghover};
+    }
 
 
     @media (max-width: 549px){
+        margin-right: ${props => `${props.mrMobile}px`};
         width: ${props => `${props.wdMobile}px`};
         border-radius: ${props => `${props.bdrMobile}px`};
         border-width:${props => `${props.bwMobile}px`};

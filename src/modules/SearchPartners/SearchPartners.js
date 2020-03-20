@@ -4,22 +4,24 @@ import { Button } from '../../Components/Button'
 import { Container } from '../../Components/Container'
 import {ThemeProvider} from 'styled-components'
 
-const theme = {    
+const theme = {   
+    bchover:"#666666", 
     bg: "#FF4E50",
+    bghover:"#666666",
     color: "white",     
   };
 
 
-export default function (){
-    return(  
-   
-    < SearchPartnersStyle>    
+export const SearchPartners = () => (
+  
+    < SearchPartnersStyle> 
+        <Container>
         <div className="description">
-            <h2>Crate your holiday </h2>
-            <h2><span>activity</span></h2>
+            <h2>Crate your holiday <span>activity</span></h2>            
             <p>Hi! What are your holiday interests?</p>                            
             <input className="formMobile" type="text" placeholder="Enter your interests"></input>             
         </div>
+        </Container>   
         <Container>
             < InputStyle>
                 <form>                
@@ -44,11 +46,14 @@ export default function (){
                 bdrDesktop={30}
                 fontszDesktop={16}
                 fontwgtDesktop={900}
-                pdDesktop={10} 
-                > Search partners
+                pdDesktop={10}
+                
+                as="a" href="https://github.com/wwwbrunagon/dreamshare-project" target="_blank" rel="noopener"> 
+                Search partners
                 </Button>                           
             </ThemeProvider>
         </Container>          
     </SearchPartnersStyle>  
-    )
-}
+);
+export default SearchPartners
+
